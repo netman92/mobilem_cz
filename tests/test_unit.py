@@ -4,7 +4,6 @@ from django.test import SimpleTestCase
 from unittest import TestCase
 from mobilem_api.models import SmsModel
 from mobilem_api.exceptions import *
-import pdb
 
 
 class SmsBaseTest(TestCase):
@@ -60,14 +59,13 @@ class SmsBaseTest(TestCase):
 
         sms = SmsModel('testuser', 'testpassword')
         sms.dry = True
-
         try:
-            sms.send_sms("420a23456789","testsms")
-            self.fail('sms.send_sms("420a23456789","testsms") should throw WrongNumberException')
+            sms.send_sms("+420a23456789","testsms")
+            self.fail('sms.send_sms("+420a23456789","testsms") should throw WrongNumberException')
         except WrongNumberException as e:
             pass
         except:
-            self.fail('sms.send_sms("420a23456789","testsms") should throw WrongNumberException')
+            self.fail('sms.send_sms("+420a23456789","testsms") should throw WrongNumberException')
     
     def test_number_verification_empty(self):
         """

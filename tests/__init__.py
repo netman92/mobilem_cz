@@ -1,7 +1,6 @@
 import os.path
 import sys
 import unittest
-import pdb
 
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
