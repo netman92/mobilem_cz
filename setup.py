@@ -1,7 +1,7 @@
 import os
 from setuptools import setup
 
-install_requires = ["Django>=Django==1.6.5", "requests"]
+install_requires = ["Django", "requests"]
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
