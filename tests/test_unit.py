@@ -13,7 +13,7 @@ class SmsBaseTest(TestCase):
         Test constructor of SmsModel
         """
 
-    	sms = SmsModel('name', 'pass')
+        sms = SmsModel('name', 'pass')
         
         actual  = sms.getUserName()
         expected = 'name'
@@ -26,15 +26,15 @@ class SmsBaseTest(TestCase):
         Test SMS API URL
         """
 
-    	sms = SmsModel('testuser', 'testpassword')
+        sms = SmsModel('testuser', 'testpassword')
         sms.dry = True
         sms.send_sms("+420123456789","testsms")
 
-    	
-    	actual = sms.build_query() 
-    	expected = sms.api_url + "?action=send&msisdn=%2B420123456789&login=testuser&auth=3f5fdc05d63cb36677f8e3317742c812&msg=testsms"
+        
+        actual = sms.build_query() 
+        expected = sms.api_url + "?action=send&msisdn=%2B420123456789&login=testuser&auth=3f5fdc05d63cb36677f8e3317742c812&msg=testsms"
 
-    	self.assertEqual(expected, actual)
+        self.assertEqual(expected, actual)
 
     def test_number_verification_start_with_plus(self):
         """

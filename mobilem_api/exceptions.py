@@ -2,28 +2,28 @@
 
 
 class MobilemApiException(Exception):
-	num = 1000
+    num = 1000
 class MissingSettingException(MobilemApiException):
-	num = 1001
+    num = 1001
 
 
 class ApiException(MobilemApiException):
-	num = 1100
+    num = 1100
 
 
 
 class ValidationException(MobilemApiException):
-	num = 1200
+    num = 1200
 
 class WrongNumberException(ValidationException):
-	num = 1201
+    num = 1201
 
 class WrongMessageException(ValidationException):
-	num = 1202
+    num = 1202
 
 class WrongUrlException(ValidationException):
-	num = 1203
+    num = 1203
 
 class WrongRecackException(ValidationException):
-	num = 1204
+    num = 1204
 
