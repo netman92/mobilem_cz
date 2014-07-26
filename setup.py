@@ -6,7 +6,7 @@ install_requires = ["Django", "requests"]
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 setup(
-    name = "mobilem_api",
+    name = "mobilem-api",
     version = "0.0.1a",
     description = "A library for sending SMS via mobilem.cz gateway.",
     long_description="\n\n".join([
