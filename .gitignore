@@ -1,4 +1,15 @@
 *.py[co]
-local.py
-mobilem_api/settings.py
 manage.py
+
+
+*.egg-info
+*.egg
+*.so
+.DS_Store
+/MANIFEST
+/.coverage
+/coverage.xml
+/htmlcov
+/build
+/dist
+/docs

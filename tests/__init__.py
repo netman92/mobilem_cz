@@ -1,7 +1,14 @@
 import os.path
+import sys
 import unittest
+import pdb
+
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
+test_dir = os.path.dirname(__file__)
+sys.path.insert(0, test_dir)
 
 
 def get_tests():
     start_dir = os.path.dirname(__file__)
-    return unittest.TestLoader().discover(start_dir, pattern="*.py")
+    return unittest.TestLoader().discover(".", pattern="test*.py")

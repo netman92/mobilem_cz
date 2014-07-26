@@ -4,7 +4,7 @@ from django.conf import settings
 from exceptions import *
 from django.core.validators import URLValidator, EmailValidator
 
-import hashlib, pdb, urllib, requests, re, unicodedata
+import hashlib, urllib, requests, re, unicodedata
 
 class SmsModel():
 	__username = None
