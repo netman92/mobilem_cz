@@ -7,13 +7,12 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 setup(
     name = "mobilem-api",
-    version = "0.0.1a",
+    version = "0.0.1b",
     description = "A library for sending SMS via mobilem.cz gateway.",
     long_description="\n\n".join([
         open(os.path.join(base_dir, "README.md"), "r").read()
     ]),
     url = "https://github.com/netman92/mobilem_cz",
-    download_url = "https://github.com/netman92/mypackage/tarball/0.0.1a",
     author = "Stanislav Komanec",
     author_email = "stanislav@komanec.eu",
     packages = ["mobilem_api"],

@@ -14,3 +14,4 @@ manage.py
 /dist
 /docs
 .pypirc
+*.log
