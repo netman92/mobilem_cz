@@ -12,6 +12,5 @@ deploy:
     secure: Zz49O5xsm2Hj265csPtb/sdyKU5mnJW9eHfnjHkyWyhDcEHRZx2isOx8VCRB+vNDfseaRBRH8v10wuOOnUXzaIaqNpDsYQkCMmOCm65KQzgEIeI0+ga8tIfCaAAbrOn+sP6ZWuUIRw9mHEUcghZLIn58hJusKcB8GjCrZG0hWxw=
   server: https://testpypi.python.org/pypi
   on:
-    tags: true
     branch: master
     repo: netman92/mobilem_cz
