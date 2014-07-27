@@ -13,3 +13,4 @@ manage.py
 /build
 /dist
 /docs
+.pypirc

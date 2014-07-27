@@ -12,7 +12,8 @@ setup(
     long_description="\n\n".join([
         open(os.path.join(base_dir, "README.md"), "r").read()
     ]),
-    url = "http://komanec.com/",
+    url = "https://github.com/netman92/mobilem_cz",
+    download_url = "https://github.com/netman92/mypackage/tarball/0.0.1a",
     author = "Stanislav Komanec",
     author_email = "stanislav@komanec.eu",
     packages = ["mobilem_api"],
