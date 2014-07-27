@@ -13,4 +13,5 @@ deploy:
   server: https://testpypi.python.org/pypi
   on:
     tags: true
+    all_branches: true
     repo: netman92/mobilem_cz
